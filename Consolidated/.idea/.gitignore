@@ -1,2 +1,10 @@
 # Default ignored files
 /workspace.xml
+
+# User Added Ignore List
+/vcs.xml
+/usage.statistics.xml
+/tasks.xml
+*.iml
+/out/
+Consolidated/Consolidated.iml
