@@ -171,6 +171,7 @@ public class VariableTypes {
         longStats();
         floatStats();
         doubleStats();
+        MemoryAllocation.decimalExamples();
 
     }
 

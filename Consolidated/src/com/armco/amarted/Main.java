@@ -34,14 +34,20 @@ public class Main {
 //        Homework.lbsToKilos();
 //        Homework.operatorChallenge();
 //        Homework.scoreChallenge();
-        int position = Homework.calculateHighScorePosition(1500);
-        Homework.displayHighScorePosition("Andrew", position);
-        position = Homework.calculateHighScorePosition(900);
-        Homework.displayHighScorePosition("Billy", position);
-        position = Homework.calculateHighScorePosition(400);
-        Homework.displayHighScorePosition("Chris", position);
-        position = Homework.calculateHighScorePosition(50);
-        Homework.displayHighScorePosition("Nikki", position);
+//        int position = Homework.calculateHighScorePosition(1500);
+//        Homework.displayHighScorePosition("Andrew", position);
+//        position = Homework.calculateHighScorePosition(900);
+//        Homework.displayHighScorePosition("Billy", position);
+//        position = Homework.calculateHighScorePosition(400);
+//        Homework.displayHighScorePosition("Chris", position);
+//        position = Homework.calculateHighScorePosition(50);
+//        Homework.displayHighScorePosition("Nikki", position);
+//        System.out.println(Homework.calcFeetAndInchesToCentimeters(8));
+//        System.out.println(Homework.calcFeetAndInchesToCentimeters(7,5));
+//        System.out.println(Homework.getDurationString(420,42));
+//        System.out.println(Homework.getDurationString(-3945));
+        Homework.printSwitchStatement('B');
+        Homework.printDayOfTheWeek(2);
 
     }
 }

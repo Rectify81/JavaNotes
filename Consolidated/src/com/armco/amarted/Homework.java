@@ -66,16 +66,131 @@ public class Homework {
     public static int calculateHighScorePosition(int score){
         if (score >= 1000) {
             return 1;
-        } else if (score >= 500 && score < 1000) {
+        } else if (score >= 500) {
             return 2;
-        } else if (score >= 100 && score < 500) {
+        } else if (score >= 100) {
             return 3;
-        } else {
-            return 4;
         }
+        return 4;
     }
-//
+//        Run the following two lines of code to call the methods above
 //        int position = Homework.calculateHighScorePosition(1500);
 //        Homework.displayHighScorePosition("Andrew", position);
 
+
+    // OVERLOADING METHOD CHALLENGE
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches){
+        if (feet<0 || (inches<0 || inches>12)) {
+            return -1;
+        }
+        double centimeters = ((feet * 12) + inches) * 2.54;
+        return centimeters;
+    }
+
+    public static double calcFeetAndInchesToCentimeters(double inches){
+        if (inches<0){
+            return -1;
+        }
+        double calcFeet = (int) inches / 12;
+        double calcInches = (int) inches % 12;
+        return calcFeetAndInchesToCentimeters(calcFeet,calcInches);
+    }
+
+
+    private static final String INVALID_VALUE_MESSAGE = "Invalid Value";
+    public static String getDurationString (int min, int sec) {
+        if ((min < 0) || (sec < 0) || (sec > 59)) {
+            return INVALID_VALUE_MESSAGE;
+        }
+        if (min > 60) {
+            int hours = min / 60;
+            min = min % 60;
+            return hours + "h " + min + "m " + sec + "s";
+        }
+        return "0h " + min + "m " + sec + "s";
+    }
+
+    public static String getDurationString (int sec) {
+        if (sec<0) {
+            return INVALID_VALUE_MESSAGE;
+        }
+
+        int min = sec / 60;
+        sec = sec % 60;
+        return getDurationString(min,sec);
+    }
+
+
+    //  SWITCH STATEMENT CHALLENGE
+    public static void printSwitchStatement(char a){
+        System.out.println("Switch Statement Results:");
+        String enteredMessage = "You entered ";
+        switch (a){
+            case 'A':
+                System.out.println("You entered 'A'");
+                break;
+            case 'B':
+                System.out.println(enteredMessage + "'B'");
+                break;
+            case 'C': case 'D': case 'E':
+                System.out.println(enteredMessage + "'C'");
+                break;
+//            case 'D':
+//                System.out.println(enteredMessage + "'D'");
+//                break;
+//            case 'E':
+//                System.out.println(enteredMessage + "'E'");
+//                break;
+            default:
+                System.out.println("You entered an invalid character");
+                break;
+        }
+    }
+    //      Day of the week challenge
+    public static void printDayOfTheWeek(int day){
+        switch (day){
+            case 0:
+                System.out.println("Sunday");
+                break;
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            default:
+                System.out.println("Invalid Day");
+                break;
+        }
+
+        if (day == 0) {
+            System.out.println("Sunday");
+        } else if (day == 1) {
+            System.out.println("Monday");
+        } else if (day == 2){
+            System.out.println("Tuesday");
+        } else if (day == 3){
+            System.out.println("Wednesday");
+        } else if (day == 4){
+            System.out.println("Thursday");
+        } else if (day == 5){
+            System.out.println("Friday");
+        } else if (day == 6){
+            System.out.println("Saturday");
+        }else {
+            System.out.println("Invalid Day");
+        }
+    }
 }
