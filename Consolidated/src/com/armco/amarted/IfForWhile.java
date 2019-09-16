@@ -1,5 +1,6 @@
 package com.armco.amarted;
 
+import javax.crypto.spec.PSource;
 import java.util.Scanner;
 
 public class IfForWhile {
@@ -71,10 +72,11 @@ public class IfForWhile {
 
    //   === 'FOR'-'WHILE'-'DO' LOOPS ===
 
-    // For Loop
+    // For Loop - cycles through while a condition is met
     public static void forLoop() {
         System.out.println("For Loop:");
 
+    //  for ([initialization]; [termination]; [increment])  <-- how to format expression
         for (int i = 1; i <= 40; i++) {
            if (i % 4 == 0) {
                  System.out.println(" " + i + " is a multiple of 4");
@@ -83,7 +85,7 @@ public class IfForWhile {
     }
 
 
-    // While Loop
+    // While Loop - cycles through until a condition changes
     public static void whileLoop() {
         System.out.println("While Loop:");
         int p = 1;
@@ -93,8 +95,27 @@ public class IfForWhile {
         }
     }
 
-    //Do While Loop - I believe the "While Loop" now takes care of this
-    public static void doLoop() {
+    public static void whileTrue(){
+        int count = 1;
+        while(true) {   // <-- creates "endless loop" until a "break" expression is executed
+            if (count == 6) {
+                break;
+            }
+            System.out.println("Count value is " + count);
+            count++;
+        }
+    }
+
+    //Do While Loop - "I believe the 'While Loop' now takes care of this" -Paul Dechone
+    public static void doLoop(){
+        int count = 1;
+        do {             // <-- This part will always run, at least once, until 'while' condition
+            System.out.println("Count value was " + count);
+            count++;
+        } while(count != 6);  // <--If count started above 6, it will cause an infinite loop TODO: NOT SURE WHY
+    }
+
+    public static void doLoopPaul() {
         Scanner scanner = new Scanner(System.in);
         int value;
         //above lines just set some stuff up so that the following doesn't show errors

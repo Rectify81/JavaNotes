@@ -46,8 +46,10 @@ public class Main {
 //        System.out.println(Homework.calcFeetAndInchesToCentimeters(7,5));
 //        System.out.println(Homework.getDurationString(420,42));
 //        System.out.println(Homework.getDurationString(-3945));
-        Homework.printSwitchStatement('B');
-        Homework.printDayOfTheWeek(2);
-
+//        Homework.printSwitchStatement('B');
+//        Homework.printDayOfTheWeek(2);
+//        Homework.printInterest(10000);
+//        Homework.print3and5();
+        IfForWhile.doLoop();
     }
 }

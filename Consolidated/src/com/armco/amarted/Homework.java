@@ -2,7 +2,6 @@ package com.armco.amarted;
 
 public class Homework {
 
-    //TODO: Convert these all to methods
 
     // RE-CREATE AN EXPRESSION IN "LONG" FORMAT
     byte hwByte = 43;
@@ -193,4 +192,36 @@ public class Homework {
             System.out.println("Invalid Day");
         }
     }
+
+
+    //  FOR STATEMENT CHALLENGE
+
+    public static double calculateInterest (double amount, double interestRate){
+        return (amount * (interestRate/100));
+    }
+
+    public static void printInterest (double amount) {
+        for (int i = 2; i < 9; i++) {
+            System.out.println(amount + " at " + i + "% interest = " + String.format("%.2f",calculateInterest(amount,i)));
+            //                                                         |-------------------------| <-- formats to only 2 decimal places
+        }
+    }
+
+    public static void print3and5(){
+        int sum = 0;
+        int count = 0;
+
+        for (int i=1; i<=1000; i++){
+            if ((i%3==0) && (i%5==0)){
+                System.out.println(i + " is divisible by both 3 and 5");
+                sum += i;
+                count++;
+            }
+            if (count>4) {
+                break;
+            }
+        }
+        System.out.println("The summation of numbers found = " + sum);
+    }
+
 }
