@@ -50,6 +50,14 @@ public class Main {
 //        Homework.printDayOfTheWeek(2);
 //        Homework.printInterest(10000);
 //        Homework.print3and5();
-        IfForWhile.doLoop();
+//        IfForWhile.doLoop();
+//        Homework.printEvenNumbers(4,20);
+//        IfForWhile.whileContinue(4,20);
+//        Homework.testEven(4,20);
+        System.out.println(Homework.sumDigits(125));
+        System.out.println(Homework.sumDigits(-125));
+        System.out.println(Homework.sumDigits(4));
+        System.out.println(Homework.sumDigits(32123));
+
     }
 }

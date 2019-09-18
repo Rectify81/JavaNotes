@@ -224,4 +224,51 @@ public class Homework {
         System.out.println("The summation of numbers found = " + sum);
     }
 
+
+    // WHILE STATEMENT CHALLENGE
+    public static boolean isEvenNumber(int number){
+        if (number % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public static void printEvenNumbers(int start,int end){
+        while (start <= end) {
+            start++;
+            if (isEvenNumber(start)) {
+                System.out.println("Even numbers are " + start);
+            }
+        }
+    }
+    public static void testEven(int start, int end){
+        int count = 0;
+        while (start <= end){
+            if (!isEvenNumber(start)){
+                start++;
+                continue;
+            }
+            count++;
+            if (count<=5) {
+                System.out.println(start + " is even");
+            }
+            start++;
+        }
+        System.out.println("Found " + count + " even numbers!");
+    }
+    public static int sumDigits (int number){
+        System.out.println("The sum of the digits in " + number + " is:");
+        int sum = 0;
+        if (number < 10) {
+            return -1;
+        }
+        while (number > 0) {
+            sum += (number % 10);
+            number /= 10;  //<-- same as (number = number / 10)
+        }
+        return sum;
+
+
+    }
+
 }

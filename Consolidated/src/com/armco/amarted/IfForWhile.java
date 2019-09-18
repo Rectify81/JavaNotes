@@ -106,13 +106,29 @@ public class IfForWhile {
         }
     }
 
+    public static void whileContinue(int start, int end){
+        while (start <= end) {
+            start++;
+            if(!Homework.isEvenNumber(start)){  // <-- if the number is not even, then start again
+                continue;
+            /*    ^--similar to "break" - however, it makes the while loop start again.
+                  "break" would exit the while loop and continue to code after the loop.
+                  "continue" brings us back to the start of the loop.
+                  Small, but important differences!                                       */
+            }
+            System.out.println(start + " is an even number");
+        }
+    }
+
     //Do While Loop - "I believe the 'While Loop' now takes care of this" -Paul Dechone
+    //   Main difference is where the test condition lives: while -> top, do -> bottom
     public static void doLoop(){
         int count = 1;
         do {             // <-- This part will always run, at least once, until 'while' condition
             System.out.println("Count value was " + count);
             count++;
-        } while(count != 6);  // <--If count started above 6, it will cause an infinite loop TODO: NOT SURE WHY
+        } while(count != 6);  // <--If count started above 6, it will cause an infinite loop - needs a break statement
+        //                 ^-- notice it needs a ";"                            TODO: NOT SURE WHY
     }
 
     public static void doLoopPaul() {
