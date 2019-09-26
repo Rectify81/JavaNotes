@@ -1,5 +1,7 @@
 package com.armco.amarted;
 
+import java.util.Scanner;
+
 public class Homework {
 
 
@@ -267,8 +269,83 @@ public class Homework {
             number /= 10;  //<-- same as (number = number / 10)
         }
         return sum;
-
-
     }
 
+
+    public static int mySumTenNumbers(){
+        int sum = 0;
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < 10; i++){
+            System.out.println("Testing 'for loop' " + (i+1) + " more times...");
+            System.out.println("Enter number #" + (i+1) + ":");
+            boolean hasNextInt = scanner.hasNextInt();
+            if (!hasNextInt){
+                System.out.println("Invalid Number");
+                scanner.nextLine();
+            } else {
+                sum += scanner.nextInt();
+                scanner.nextLine();
+                System.out.println("New Sum: " + sum);
+            }
+        }
+
+        scanner.close();
+        System.out.println("Sum is: " + sum);
+        return sum;
+    }
+
+    public static int instructorSumTenNumbers(){
+        Scanner scanner = new Scanner(System.in);
+        int counter = 0;
+        int sum = 0;
+
+        while (true) { // <--Endless loop
+            int order = counter + 1;
+            System.out.println("Enter number #" + order + ":");
+            boolean isAnInt = scanner.hasNextInt();
+            if (isAnInt){
+                int number = scanner.nextInt();
+                counter++;
+                sum += number;
+                if (counter==10){
+                    break;
+                }
+            } else {
+                System.out.println("Invalid Number");
+            }
+
+            scanner.nextLine();  // <-- handle end of line (enter key)
+        }
+        System.out.println("sum = " + sum);
+        scanner.close();
+        return sum;
+    }
+
+
+    public static void printMinAndMax(){
+        int max = Integer.MIN_VALUE; // <--Makes sure the first input is counted
+        int min = Integer.MAX_VALUE; // <--Makes sure the first input is counted
+        Scanner scanner = new Scanner(System.in);
+
+        while (true){
+            System.out.println("Enter a number:");
+            boolean isInt = scanner.hasNextInt();
+            if (isInt) {
+                int number = scanner.nextInt();
+                if (number < min){
+                    min = number;
+                }
+                if (number > max){
+                    max = number;
+                }
+
+            } else {
+                System.out.println("\nMinimum number is: " + min);
+                System.out.println("Maximum number is: " + max);
+                break;
+            }
+        }
+        scanner.close(); // <--BE CAREFUL TO NOT FORGET
+    }
 }

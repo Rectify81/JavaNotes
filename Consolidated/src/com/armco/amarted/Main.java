@@ -54,10 +54,14 @@ public class Main {
 //        Homework.printEvenNumbers(4,20);
 //        IfForWhile.whileContinue(4,20);
 //        Homework.testEven(4,20);
-        System.out.println(Homework.sumDigits(125));
-        System.out.println(Homework.sumDigits(-125));
-        System.out.println(Homework.sumDigits(4));
-        System.out.println(Homework.sumDigits(32123));
-
+//        System.out.println(Homework.sumDigits(125));
+//        System.out.println(Homework.sumDigits(-125));
+//        System.out.println(Homework.sumDigits(4));
+//        System.out.println(Homework.sumDigits(32123));
+//        ParsingValues.parseStringToNumber(2018);
+//        UserInput.readingUserInput();
+//        Homework.mySumTenNumbers();
+//        Homework.instructorSumTenNumbers();
+        Homework.printMinAndMax();
     }
 }
