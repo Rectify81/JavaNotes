@@ -1,5 +1,7 @@
 package com.armco.amarted;
 
+import com.armco.amarted.exercises.Test;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -63,5 +65,6 @@ public class Main {
 //        Homework.mySumTenNumbers();
 //        Homework.instructorSumTenNumbers();
         Homework.printMinAndMax();
+
     }
 }
