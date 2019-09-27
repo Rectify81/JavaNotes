@@ -1,4 +1,6 @@
-package com.armco.amarted;
+package com.armco.amarted.notes;
+
+import com.armco.amarted.Homework;
 
 import javax.crypto.spec.PSource;
 import java.util.Scanner;

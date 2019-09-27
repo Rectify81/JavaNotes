@@ -1,4 +1,4 @@
-package com.armco.amarted;
+package com.armco.amarted.notes;
 
 import javax.xml.crypto.Data;
 

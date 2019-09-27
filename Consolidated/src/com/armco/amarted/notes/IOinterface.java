@@ -1,4 +1,4 @@
-package com.armco.amarted;
+package com.armco.amarted.notes;
 
 import java.util.Scanner;
 
@@ -38,5 +38,7 @@ public class IOinterface {
                 break;
         }
 
+        // FOR MORE INFO SEE THE METHOD BELOW
+        //     Homework.printMinAndMax();
     }
 }
