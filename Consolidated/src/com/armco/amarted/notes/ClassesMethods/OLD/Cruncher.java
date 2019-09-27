@@ -1,4 +1,5 @@
-package armCo.AMarted.RecapNotes;
+package com.armco.amarted.notes.ClassesMethods.OLD;
+
 public class Cruncher {
 
     //   ------  DEFINE VARIABLES  ------
@@ -130,6 +131,4 @@ public class Cruncher {
         uiInflation = huiInflation;
 
     }
-
-
 }

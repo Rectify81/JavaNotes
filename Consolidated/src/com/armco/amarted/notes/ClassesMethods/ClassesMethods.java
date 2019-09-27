@@ -1,16 +1,16 @@
-package com.armco.amarted.notes;
+package com.armco.amarted.notes.ClassesMethods;
 
 import javax.xml.crypto.Data;
 
-public class Methods {
+public class ClassesMethods {
 
 /*   Methods are enclosed statements that perform an operation - found within classes
 
       --- IN A NUTSHELL ---
 
        Classes can contain:
-        1. Data
-        2 Subroutines (methods) - Behavior...
+        1. Data (Variables) - State
+        2. Methods (Subroutines) - Behavior...
 
         Instance variables = data or "state"
 
@@ -24,12 +24,26 @@ public class Methods {
             My name is Mike Power and I am 37 years old.
             [unseen, Mike would then become 47 years old because of the "getOlder" method adding 10 to his age]
 
+Classes - Blueprint of objects (need properties - see Ball.java)
+Methods - Enclosed statements that perform an operation (generally return a value)
 
 
          === Usage ===
     public static void myName() {}
    [access] [instance] [return type] [name]([parameters]) {[code block]}
  (PubProtPriv)         (int, string)        (variables)
+
+
+ public static void main(String[] args)
+   1     2     3    4      5      6
+1) Access Permissions(public, private, or Protected) - See Ball.java
+2) ????
+3) Return Type (void= no return; examples: String, Char, Boolean - any variable type)
+4) Name (user determines the name of the class or method)
+5) Declaration of Variables (e.g. String firstName, boolean iTerm, etc)
+6) Values to Pass On (e.g. a:4 b:5)
+*** SEE MethodBasics FOR MORE EXAMPLES ***
+
  */
 
 //       === Basic Method ===
@@ -80,6 +94,17 @@ public class Methods {
 //      calculateScore3(true, 800, 5, 100);  <--- Example of how it's called
 //      int newHighScore = calculateScore3(true, 800, 5, 100);    <-- Variables can be assigned the return value
 
+/*      When using an IDE (IntelliJ or AndroidStudio), they will usually suggest which variable you are calling as
+        you type.  They will denote the name with the following:
+        p = Parameter
+        f = Field (variable)
+        m = Method
+        c = Class
+        i = ???
+        lighteningBolt = ???
+
+        If it has a lock next to it, it is showing if it is "private" (locked) or "public" (unlocked)
+ */
 
 
 }

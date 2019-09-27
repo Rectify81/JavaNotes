@@ -1,7 +1,8 @@
-package armCo.AMarted.RecapNotes;
+package com.armco.amarted.notes.ClassesMethods.OLD;
 
-public class exBall_Main {
-    public static void main(String[] args) {
+public class ExBall_Main {
+    //public static void main(String[] args) {
+    public static void exBallMain(){
         // write your code here
 
 ///*

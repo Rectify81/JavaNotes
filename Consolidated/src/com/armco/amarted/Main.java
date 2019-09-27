@@ -1,6 +1,6 @@
 package com.armco.amarted;
 
-import com.armco.amarted.exercises.Test;
+import com.armco.amarted.notes.ClassesMethods.CarMain;
 
 public class Main {
 
@@ -64,7 +64,9 @@ public class Main {
 //        UserInput.readingUserInput();
 //        Homework.mySumTenNumbers();
 //        Homework.instructorSumTenNumbers();
-        Homework.printMinAndMax();
+//        Homework.printMinAndMax();
+
+//        CarMain.callCarMain();
 
     }
 }

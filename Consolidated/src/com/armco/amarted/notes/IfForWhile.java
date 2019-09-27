@@ -1,8 +1,7 @@
 package com.armco.amarted.notes;
 
-import com.armco.amarted.Homework;
+import com.armco.amarted.homework.Homework;
 
-import javax.crypto.spec.PSource;
 import java.util.Scanner;
 
 public class IfForWhile {

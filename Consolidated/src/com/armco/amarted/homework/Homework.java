@@ -1,4 +1,4 @@
-package com.armco.amarted;
+package com.armco.amarted.homework;
 
 import java.util.Scanner;
 
@@ -348,4 +348,9 @@ public class Homework {
         }
         scanner.close(); // <--BE CAREFUL TO NOT FORGET
     }
+
+
+
+    BankAccount myAccount = new BankAccount();
+
 }
