@@ -284,7 +284,7 @@ public class Homework {
             boolean hasNextInt = scanner.hasNextInt();
             if (!hasNextInt){
                 System.out.println("Invalid Number");
-                scanner.nextLine();
+//                scanner.nextLine();
             } else {
                 sum += scanner.nextInt();
                 scanner.nextLine();

@@ -31,7 +31,7 @@ public class Animal {
     public void move(int speed){
         // add code here to make behavior
         System.out.println("Animal.move() called...");
-        System.out.println("Animal is moving at " + speed);
+        System.out.println("Animal is moving at " + speed + "mph");
     }
 
 
