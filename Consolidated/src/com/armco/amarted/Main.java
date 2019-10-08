@@ -1,6 +1,7 @@
 package com.armco.amarted;
 
-import com.armco.amarted.notes.ClassesMethods.CarMain;
+import com.armco.amarted.notes.ClassesMethods.Constructors.VipCustomer;
+import com.armco.amarted.notes.Inheritance.InheritanceMain;
 
 public class Main {
 
@@ -23,6 +24,17 @@ public class Main {
  *   Methods - Enclosed statements that perform an operation (generally return a value)
  */
 
+/*      When using an IDE (IntelliJ or AndroidStudio), they will usually suggest which variable you are calling as
+        you type.  They will denote the name with the following:
+        p = Parameter
+        f = Field (variable)
+        m = Method
+        c = Class
+        i = ???
+        lighteningBolt = ???
+
+        If it has a lock next to it, it is showing if it is "private" (locked) or "public" (unlocked)
+ */
 
 
 //      ***  DECIDE WHAT TO OUTPUT HERE  ***
@@ -65,8 +77,36 @@ public class Main {
 //        Homework.mySumTenNumbers();
 //        Homework.instructorSumTenNumbers();
 //        Homework.printMinAndMax();
-
 //        CarMain.callCarMain();
+
+//        // Creating and using constructors with the BankAccount.java
+//        System.out.println("USING BLANK CONSTRUCTOR");
+//        BankAccount lindasAccount = new BankAccount();
+//        System.out.println(lindasAccount.getPhone());
+//        System.out.println(lindasAccount.getBalance());
+//        System.out.println("\nUSING CONSTRUCTOR WITH PARAMETERS");
+//        BankAccount bobsAccount = new BankAccount(12345,0.0,"Bob Brown","bobbyBrown@gmail.com","857-555-2020");
+//        bobsAccount.withdrawFunds(100.00);  // <--Balance is 0, so insufficient funds
+//        bobsAccount.depositFunds(250.00);
+//        bobsAccount.withdrawFunds(100.00);
+//        System.out.println(bobsAccount.getAccountNum());
+//        System.out.println(bobsAccount.getEmail());
+
+//        // USE VipCustomer TO DEMONSTRATE CONSTRUCTORS
+//        VipCustomer person1 = new VipCustomer();
+//        System.out.println(person1.getName());
+//        System.out.println(person1.getCreditLimit());
+//        VipCustomer person2 = new VipCustomer("Beth","beth@email.com");
+//        System.out.println(person2.getName());
+//        System.out.println(person2.getCreditLimit());
+//        VipCustomer person3 = new VipCustomer("Tim",250000.0,"tim@gmail.com");
+//        System.out.println(person3.getName());
+//        System.out.println(person3.getCreditLimit());
+
+        InheritanceMain.callMain();
+
+
+
 
     }
 }
