@@ -1,4 +1,4 @@
-package com.armco.amarted.notes.ClassesMethods.constructors;
+package com.armco.amarted.notes.ClassesMethods.Constructors;
 
 public class VipCustomer {
     private String name;

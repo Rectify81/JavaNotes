@@ -1,6 +1,6 @@
 package com.armco.amarted.homework;
 
-import com.armco.amarted.notes.ClassesMethods.constructors.BankAccount;
+import com.armco.amarted.notes.ClassesMethods.Constructors.BankAccount;
 
 import java.util.Scanner;
 

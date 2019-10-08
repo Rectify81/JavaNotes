@@ -109,6 +109,6 @@ Methods - Enclosed statements that perform an operation (generally return a valu
 
 //       === CONSTRUCTORS ===
 /*
-        Bu
+        Allow you to build your own objects and variable types.  See examples in the "Constructors" package directory.
  */
 }
