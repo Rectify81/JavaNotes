@@ -6,6 +6,7 @@ import com.armco.amarted.notes.ClassesMethods.CarMain;
 import com.armco.amarted.notes.ClassesMethods.Constructors.BankAccount;
 import com.armco.amarted.notes.ClassesMethods.Constructors.VipCustomer;
 import com.armco.amarted.notes.Inheritance.InheritanceMain;
+import com.armco.amarted.notes.Polymorphism.PolymorphMain;
 import jdk.swing.interop.SwingInterOpUtils;
 
 public class Main {
@@ -129,6 +130,9 @@ public class Main {
         System.out.println("*** ACTIVATING ANIMALS ***");
         InheritanceMain.callMain();
 
+        System.out.println("\n         ----- POLYMORPHISM-----");
+        System.out.println("*** RUNNING MOVIES ***");
+        PolymorphMain.grabMovie();
 
 
 
