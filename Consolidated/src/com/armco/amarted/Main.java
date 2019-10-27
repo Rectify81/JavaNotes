@@ -1,5 +1,6 @@
 package com.armco.amarted;
 
+import com.armco.amarted.notes.Arrays.ArrayLists;
 import com.armco.amarted.homework.Arrays.MinimumElement;
 import com.armco.amarted.homework.Arrays.ReverseArray;
 import com.armco.amarted.homework.Homework;
@@ -16,7 +17,6 @@ import com.armco.amarted.notes.Inheritance.Car;
 import com.armco.amarted.notes.Inheritance.InheritanceMain;
 import com.armco.amarted.notes.Inheritance.Vehicle;
 import com.armco.amarted.notes.Polymorphism.PolymorphMain;
-import jdk.swing.interop.SwingInterOpUtils;
 
 public class Main {
 
@@ -233,6 +233,8 @@ public class Main {
         MinimumElement.minArray(5);
         ReverseArray.myArray(5);
         ReverseArray.profMain();
+
+        ArrayLists groceryList = new ArrayLists();
 
     }
 }
