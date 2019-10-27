@@ -106,4 +106,9 @@ public class GeneralNotes {
             Each instance has it's own copy of an instance variable with different values (state).
             Instance variables represent the state of an instance.
      */
+
+    /*
+                        *** REFERENCE TYPES vs VALUE TYPES ***
+
+     */
 }

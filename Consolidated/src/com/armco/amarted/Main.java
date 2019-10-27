@@ -3,6 +3,7 @@ package com.armco.amarted;
 import com.armco.amarted.homework.Homework;
 import com.armco.amarted.homework.Room.*;
 import com.armco.amarted.notes.*;
+import com.armco.amarted.notes.Arrays.Arrays;
 import com.armco.amarted.notes.ClassesMethods.CarMain;
 import com.armco.amarted.notes.ClassesMethods.Constructors.BankAccount;
 import com.armco.amarted.notes.ClassesMethods.Constructors.VipCustomer;
@@ -11,12 +12,9 @@ import com.armco.amarted.notes.Encapsulation.*;
 import com.armco.amarted.notes.Inheritance.AgentCar;
 import com.armco.amarted.notes.Inheritance.Car;
 import com.armco.amarted.notes.Inheritance.InheritanceMain;
-<<<<<<< HEAD
 import com.armco.amarted.notes.Inheritance.Vehicle;
-=======
 import com.armco.amarted.notes.Polymorphism.PolymorphMain;
 import jdk.swing.interop.SwingInterOpUtils;
->>>>>>> ed04eec3496466343b8bd1babf3b6e55b07ed829
 
 public class Main {
 
@@ -139,7 +137,7 @@ public class Main {
         System.out.println("*** ACTIVATING ANIMALS ***");
         InheritanceMain.callMain();
 
-<<<<<<< HEAD
+
         System.out.println("\nCALLING UPON VEHICLE INHERITANCES");
 //        Vehicle monorail = new Vehicle(0,110);
 //        Car toyotaSedan = new Car(40,1);
@@ -220,13 +218,16 @@ public class Main {
         System.out.println(printer2.getToner());
         System.out.println(printer1.isDuplex());
         System.out.println(printer2.isDuplex());
-=======
+
         System.out.println("\n         ----- POLYMORPHISM-----");
         System.out.println("*** RUNNING MOVIES ***");
         PolymorphMain.grabMovie();
 
-
->>>>>>> ed04eec3496466343b8bd1babf3b6e55b07ed829
+        System.out.println("\n         ----- ARRAYS-----");
+        Arrays.myArrays();
+        int[] array = {200,220,240,260,280};
+        Arrays.printArray(array);
+        Arrays.printVarArray();
 
 
 
