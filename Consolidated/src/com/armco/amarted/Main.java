@@ -1,5 +1,7 @@
 package com.armco.amarted;
 
+import com.armco.amarted.homework.Arrays.MinimumElement;
+import com.armco.amarted.homework.Arrays.ReverseArray;
 import com.armco.amarted.homework.Homework;
 import com.armco.amarted.homework.Room.*;
 import com.armco.amarted.notes.*;
@@ -228,8 +230,9 @@ public class Main {
         int[] array = {200,220,240,260,280};
         Arrays.printArray(array);
         Arrays.printVarArray();
-
-
+        MinimumElement.minArray(5);
+        ReverseArray.myArray(5);
+        ReverseArray.profMain();
 
     }
 }
