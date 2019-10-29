@@ -228,13 +228,13 @@ public class Main {
         System.out.println("\n         ----- ARRAYS-----");
         Arrays.myArrays();
         int[] array = {200,220,240,260,280};
-        Arrays.printArray(array);
-        Arrays.printVarArray();
-        MinimumElement.minArray(5);
-        ReverseArray.myArray(5);
-        ReverseArray.profMain();
+//        Arrays.printArray(array);
+//        Arrays.printVarArray();
+//        MinimumElement.minArray(5);
+//        ReverseArray.myArray(5);
+//        ReverseArray.profMain();
 
-        ArrayLists groceryList = new ArrayLists();
+        ArrayLists.myGroceryList();
 
     }
 }
