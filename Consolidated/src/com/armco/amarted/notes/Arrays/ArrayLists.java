@@ -83,6 +83,20 @@ public class ArrayLists {
         }
     }
 
+    public static void copyArrayList() {
+        // Three ways to copy an array into a new array
+        ArrayList<String> newArray = new ArrayList<String>();
+        newArray.addAll(groceryList.getGroceryList());  // <-- need to setup the getter in GroceryList.java
+
+        ArrayList<String> nextArray = new ArrayList<>(groceryList.getGroceryList());
+        //  Essentially identical to the code above, just at the time of initialization
+
+        String[] myArray = new String[groceryList.getGroceryList().size()];
+        myArray = groceryList.getGroceryList().toArray(myArray);
+
+
+    }
+
 
 
 

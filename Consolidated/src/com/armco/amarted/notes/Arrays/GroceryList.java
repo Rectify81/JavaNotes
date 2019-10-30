@@ -58,4 +58,8 @@ public class GroceryList {
         }
         return false;
     }
+
+    public ArrayList<String> getGroceryList() {
+        return groceryList;
+    }
 }
